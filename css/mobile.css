@@ -1,0 +1,91 @@
+@media screen and (max-width: 767px) {
+  .hidden-on-small-screens {
+    display: none;
+  }
+
+  .mobile-container {
+    width: 100%;
+    margin: auto;
+    /* background-color: #555; */
+    color: #17252a;
+    /* border-radius: 10px; */
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: #17252a;
+    position: relative;
+  }
+
+  .topnav #myLinks {
+    display: none;
+  }
+
+  .topnav a {
+    color: #feffff;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+  }
+
+  h1.logo {
+    font-size: 1rem;
+  }
+
+  h1.logo:hover {
+    background-color: #def2f1;
+    color: #17252a;
+  }
+
+  .topnav a.icon {
+    background: #17252a;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav a:hover,
+  .topnava:focus {
+    background-color: #def2f1;
+    color: #17252a;
+    transition: background-color 1s ease-in;
+  }
+
+  .active {
+    background-color: #2b7a78;
+    /* color: #feffff; */
+  }
+
+  /* SHOWCASE LAYOUT MOBILE */
+
+  .showcase-container {
+    padding: 0 1rem;
+  }
+
+  .showcase-container h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .showcase-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .showcase-container p {
+    font-size: 1.5rem;
+  }
+}
+
+/* CONTACT LAYOUT MOBILE */
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
