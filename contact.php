@@ -25,6 +25,7 @@
       <nav>
         <div class="nav-container">
           <a href="index.php">home</a>
+          <a href="portfolio.php">portfolio</a>
           <a href="about.php">about</a>
           <a href="contact.php">contact</a>
         </div>
@@ -45,6 +46,7 @@
       <!-- <a href="#home" class="active">Logo</a> -->
       <div id="myLinks">
         <a href="index.php">home</a>
+        <a href="portfolio.php">portfolio</a>
         <a href="about.php">about</a>
         <a href="contact.php">contact</a>
       </div>
