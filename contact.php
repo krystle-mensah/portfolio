@@ -61,8 +61,9 @@
   <?php include "contact-form.php" ?>
 
     <div class="contact-container">
-      <div class="page-title-container">
-        <h1 class="page-title">contact</h1>
+      
+      <div class="page-title">
+        <h1 class="the-contact-title the-page-title">contact</h1>
       </div>
 
       <div class="contact-wrapper">

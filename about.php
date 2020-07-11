@@ -64,45 +64,45 @@
     <section id="about">
       <div class="about-container">
 
-        <div class="page-title-container">
-          <h1 class="page-title">skills</h1>
+        <div class="page-title">
+          <h1 class="the-about-title the-page-title">skills</h1>
         </div>
-          <div class="about-wrapper">
-            <!-- div 1 -->
-            <div class="skills-container">
-              <h3 class="skill-title">HTML</h3 class="skill-title">
-              <div class="skills-content">
-                <div class="skills html">90%</div>
-              </div>
-    
-              <h3 class="skill-title">CSS</h3 class="skill-title">
-              <div class="skills-content">
-                <div class="skills css">80%</div>
-              </div>
-    
-              <h3 class="skill-title">JavaScript</h3 class="skill-title">
-              <div class="skills-content">
-                <div class="skills js">65%</div>
-              </div>
-    
-              <h3 class="skill-title">PHP</h3 class="skill-title">
-              <div class="skills-content">
-                <div class="skills php">60%</div>
-              </div>
+
+        <div class="about-wrapper">
+          <!-- div 1 -->
+          <div class="skills-container">
+            <h3 class="skill-title">HTML</h3 class="skill-title">
+            <div class="skills-content">
+              <div class="skills html">90%</div>
             </div>
-            <!-- skills-container -->
-    
-            <!-- div two -->
-            <aside class="side-paragraph">
-              <h3>About me !</h3>
-              <p>
-                Frontend developer at Imedia8, currently living in London.
-                Available for freelance and contract work in London or remotely.
-              </p>
-            </aside>
-            <!-- SIDE-PARAGRAPH -->
+  
+            <h3 class="skill-title">CSS</h3 class="skill-title">
+            <div class="skills-content">
+              <div class="skills css">80%</div>
+            </div>
+  
+            <h3 class="skill-title">JavaScript</h3 class="skill-title">
+            <div class="skills-content">
+              <div class="skills js">65%</div>
+            </div>
+  
+            <h3 class="skill-title">PHP</h3 class="skill-title">
+            <div class="skills-content">
+              <div class="skills php">60%</div>
+            </div>
           </div>
-          <!-- about-wrapper -->
+          <!-- skills-container -->
+  
+          <!-- div two -->
+          <aside class="side-paragraph">
+            <h3>About me !</h3>
+            <p>
+              Frontend developer at Imedia8, currently living in London.
+              Available for freelance and contract work in London or remotely.
+            </p>
+          </aside>
+          <!-- SIDE-PARAGRAPH -->
+        </div><!-- about-wrapper -->
 
       </div> <!-- about-container -->
     </section>

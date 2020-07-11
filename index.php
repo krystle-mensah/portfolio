@@ -64,7 +64,7 @@
     <section id="showcase">
       <div class="showcase-container">
         <!-- DATA is a html5 attribute that allows custom stuff. data-words is an array of javascript objects -->
-        <h1>
+        <h1 class="the-showcase-title the-page-title ">
           Hi, I'm a
           <span
             class="txt-type"

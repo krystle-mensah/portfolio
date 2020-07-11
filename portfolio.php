@@ -60,11 +60,40 @@
       </div>
     </div>
     <!-- MOBILE-CONTAINER -->
+    
+    <!-- section class about -->
+    <section class="main">
+      
+      <!-- div class container -->
+      <div class="portfolio-container">
+        <div class="grid-2">
+          
+          <!-- div class center -->
+          <div class="page-title">
+            <div class="page-title-container">
+              <h1 class="the-portfolio-title the-page-title">portfolio</h1>
+            </div><!-- page-title-container -->
+          </div>
 
-    <section id="showcase">
-      <div class="showcase-container">
-       
-      </div><!-- showcase-container -->
+          <!-- this is my 2nd grid item called div -->
+          <div class="work">
+            <div class="work-container">
+              <!--work image  -->
+              <div class="work-image">
+                <img class="the-work-image" src="img/work-1.jpg" alt="">
+              </div><!-- work-image -->
+             
+              <!-- work links -->
+              <div class="work-links">
+                <!-- <a class="the-work-link" href="https://bitbucket.org/studentbridge/community-college-system-of-new-hampshire/src/master/" target="_blank">git hub</a> -->
+                <a class="the-work-link" href="https://ccsnh.college-tour.com/"  target="_blank">live site</a>
+              </div><!-- work-links -->
+              
+            </div><!-- work-container -->
+          </div><!-- work -->
+
+        </div> <!-- grid-2 --> 
+      </div><!-- portfolio-container -->
     </section><!-- showcase -->
 
     <footer>

@@ -9,13 +9,33 @@ body {
 	line-height: 1.6;
 }
 
-/*SPEACIAL CLASSES*/
+/*============
+UTILITIES 
+=================================*/
+
+.page-title {
+	padding: 1em;
+	color: #17252a;
+	text-align: center;
+}
+
+h1.the-page-title {
+	font-size: 3.5rem;
+	font-family: 'Montserrat', sans-serif;
+	margin: 0.4rem;
+}
+
+/*============
+SPEACIAL CLASSES
+=================================*/
 
 .clear-fix {
 	clear: both;
 }
 
-/* HEADER LAYOUT */
+/*============
+HEADER LAYOUT
+=================================*/
 
 header {
 	padding: 2em;
@@ -73,10 +93,7 @@ nav {
 	padding: 0 3rem;
 }
 
-.showcase-container h1 {
-	font-size: 3.5rem;
-	font-family: 'Montserrat', sans-serif;
-	margin: 0.4rem;
+h1.the-showcase-title {
 	color: #feffff;
 }
 
@@ -93,13 +110,14 @@ nav {
 
 .showcase-container h2 {
 	font-size: 2rem;
-	/* text-transform: capitalize; */
 	font-family: 'Montserrat', sans-serif;
 	color: #feffff;
 	margin: 0.4rem;
 }
 
-/*  ABOUT LAYOUT  */
+/*============
+ABOUT LAYOUT
+=================================*/
 
 /* #about {} */
 
@@ -108,12 +126,6 @@ nav {
 	margin-left: auto;
 	margin-right: auto;
 	padding: 1em;
-}
-
-/* .page-title-container {} */
-
-h1.page-title {
-	text-align: center;
 }
 
 .about-wrapper > * {
@@ -126,27 +138,6 @@ h3.skill-title {
 	margin: 1rem 0 1rem 0;
 	font-family: 'Montserrat', sans-serif;
 }
-
-/* .about-wrapper {
-  width: 80%;
-  overflow: hidden;
-  margin: auto;
-  height: 100%;
-} */
-
-/* .page-title-container h1 {
-  text-transform: uppercase;
-  margin: 0.625em 0;
-  font-family: "Montserrat", sans-serif;
-  color: #17252a;
-} */
-
-/* .skills-container {
-  float: left;
-  width: 60%;
-  padding-right: 5em;
-  font-family: "Montserrat", sans-serif;
-} */
 
 .skills-content {
 	width: 100%;
@@ -203,17 +194,6 @@ h3.skill-title {
 	margin-left: auto;
 	margin-right: auto;
 	padding: 1em;
-}
-
-.page-title-container {
-	padding: 2em;
-}
-
-h1.page-title {
-	text-transform: capitalize;
-	text-align: center;
-	font-family: 'Montserrat', sans-serif;
-	color: #17252a;
 }
 
 .contact-wrapper {
@@ -329,26 +309,86 @@ footer p {
 		padding: 2rem;
 	}
 
-	h1.page-title {
-		text-align: left;
-	}
-
 	/* CONTACT */
 	.contact-wrapper {
 		display: grid;
 		grid-template-columns: 1fr 2fr;
 	}
+
+	/* PORTFOLIO  */
+
+	.grid-2 {
+		display: grid;
+		grid-gap: 20px;
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
 
 @media (min-width: 1200px) {
-	.showcase-container h1 {
+	h1.the-page-title {
 		font-size: 5rem;
+		font-family: 'Montserrat', sans-serif;
 	}
 }
 
 /*============
 PORTFOLIO LAYOUT
 =================================*/
+
+.main {
+	height: 77vh;
+	/* max-width: 1000px; */
+	margin: auto;
+}
+
+.portfolio-container {
+	flex-direction: column;
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	padding: 0 3rem;
+}
+
+.page-title-container {
+	flex-direction: column;
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	/* padding: 0 3rem; */
+}
+
+h1.the-portfolio-title {
+	color: #17252a;
+}
+
+.work-image {
+	padding: 1em;
+}
+
+img.the-work-image {
+	display: block;
+	width: 100%;
+	height: auto;
+	box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
+}
+
+.work-links {
+	padding: 1em;
+}
+
+a.the-work-link {
+	margin-right: 1rem;
+	text-decoration: none;
+	text-transform: capitalize;
+	color: #feffff;
+	font-family: 'Montserrat', sans-serif;
+}
+
+a.the-work-link:hover,
+a.the-work-link:focus {
+	color: #17252a;
+	transition: color 0.5s ease-out;
+}
 
 /*
 END PORTFOLIO LAYOUT
