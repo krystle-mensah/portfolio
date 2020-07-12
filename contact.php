@@ -58,8 +58,6 @@
   <!-- MOBILE-CONTAINER -->
 
   <section id="contact">
-  <?php include "contact-form.php" ?>
-
     <div class="contact-container">
       
       <div class="page-title">
@@ -74,7 +72,8 @@
         </div><!-- company-map -->
 
         <div class="contact">
-  
+        
+        <!-- FORM DATA -->
         <?php
 
           //message Vars
@@ -152,9 +151,7 @@
         ?>
       
           <!-- if message is not equal to nothing. if that is true then we wont to put out the alert.  -->
-          <?php if ($msg != ''): ?>
-            <div class="<?php echo $msgClass ?>"><?php echo $msg ?></div>
-          <?php endif;?>
+          <?php if ($msg != ''): ?><div class="<?php echo $msgClass ?>"><?php echo $msg ?></div><?php endif;?>
 
           <!-- form -->
           <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
@@ -188,14 +185,10 @@
               <input type="submit" name="submit" value="Submit" />
             </p>
           </form>
-        </div>
-        <!-- contact -->
-      </div>
-      <!-- contact-wrapper -->
-    </div>
-    <!-- contact-container -->
+        </div><!-- contact -->
+      </div><!-- contact-wrapper -->
+    </div><!-- contact-container -->
   </section>
-  <!-- CONTACT -->
 
   <footer>
     <p>&copy;2020 Krystle Mensah | All rights reversed</p>
