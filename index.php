@@ -43,18 +43,16 @@
     <div class="mobile-container hidden-on-large-screens">
       <!-- Top Navigation Menu -->
       <div class="topnav">
-        <a href="index.php">
-          <h1 class="logo">Krystle Mensah</h1>
-        </a>
 
-        <!-- <a href="#home" class="active">Logo</a> -->
-        <div id="myLinks">
+        <div id="side-menu" class="side-nav">
+          <a href="index.php"><h1 class="logo">Krystle Mensah</h1></a>
+          <a class="btn-close" onclick="closeSlideMenu()" href="#">&times;</a>
           <a href="index.php">home</a>
           <a href="portfolio.php">portfolio</a>
           <a href="about.php">about</a>
           <a href="contact.php">contact</a>
-        </div>
-        <a href="javascript:void(0);" class="icon" onclick="mobileToggle()">
+        </div><!-- navbar-nav -->
+        <a href="#" class="hamburger-icon" onclick="openSlideMenu()">
           <i class="fa fa-bars"></i>
         </a>
       </div>

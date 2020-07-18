@@ -1,8 +1,11 @@
-function mobileToggle() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
+function openSlideMenu() {
+	document.getElementById('side-menu').style.width = '250px';
+
+	document.getElementById('showcase').style.marginLeft = '250px';
+}
+
+function closeSlideMenu() {
+	document.getElementById('side-menu').style.width = '0';
+
+	document.getElementById('showcase').style.marginLeft = '0';
 }

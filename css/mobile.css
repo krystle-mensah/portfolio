@@ -21,10 +21,6 @@
 		position: relative;
 	}
 
-	.topnav #myLinks {
-		display: none;
-	}
-
 	.topnav a {
 		color: #feffff;
 		padding: 14px 16px;
@@ -43,7 +39,7 @@
 		color: #17252a;
 	}
 
-	.topnav a.icon {
+	.topnav a.hamburger-icon {
 		background: #17252a;
 		display: block;
 		position: absolute;
