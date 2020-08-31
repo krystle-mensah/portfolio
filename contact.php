@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -72,89 +74,26 @@
         </div><!-- company-map -->
 
         <div class="contact">
+
+        <?php 
+
+        if( isset($_SESSION[ 'msg' ]) && ($_SESSION['msgClass'])){
+
+          $msg = $_SESSION['msg'];
+          $msgClass = $_SESSION['msgClass'];
+
+          //echo "<div>$msg</div>";
+          echo "<div class='alert $msgClass'>$msg</div>";
+          session_destroy();
+        }
         
-        <!-- FORM DATA -->
-        <?php
-
-          //message Vars
-
-          $msg = '';
-          $msgClass = ''; 
-
-          if(isset($_POST['submit'])){
-            //test
-            ////echo "Submitted";
-            
-            // collect Data from user
-            $first_name = ($_POST['firstname']);
-            $last_name = ($_POST['lastname']);
-            $email = ($_POST['email']);
-            $message = ($_POST['message']);
-            $country = ($_POST['country']);
-
-            //check data required fields. if none of this are empty
-            if(!empty($first_name) && !empty($last_name) && !empty($email) && !empty($message) && !empty($country)) {
-            
-              //then we passed
-              //function filters the $email with the specified filter if false 
-              if(filter_var($email, FILTER_VALIDATE_EMAIL) === false){
-                //then it failed and we send a message
-                $msg = 'please use a vaild email address';
-                $msgClass = 'alert-danger';
-
-
-              }
-              else {
-                // we passed
-                // hold the email where you want this to go
-                $to_email = 'web-development@krystlemensah.co.uk';
-                $subject = 'Contact Request From: '.$first_name;
-                $body = '<h2>Contact Request</h2> 
-                  <h4>First Name</h4><p>'.$first_name.'</p> 
-                  <h4>Last Name</h4><p>'.$last_name.'</p> 
-                  <h4>Email</h4><p>'.$email.'</p>
-                  <h4>Message</h4><p>'.$message.'</p>
-                ';    
-                
-                // header for email
-                $headers = "MIME-Version: 1.0" ."\r\n";
-                // add to
-                $headers .= "Content-Type:text/html;charset=UTF-8" . "
-                \r\n";
-                //now we wont the from who this is from. additional header.
-                $headers .= "From: " .$first_name. "<".$email.">". "\r\n";
-
-                // now we can use the mail function. if it send if it dosent.
-                if(mail($to_email, $subject, $body, $headers)) {
-                  // if ture then we send a message. email sent
-                  $msg = 'Your email has been sent';
-                  $msgClass = 'alert-success';
-
-                } 
-                else {
-                  //if failed. we sent this 
-                  $msg = 'Your email was not send';
-                  $msgClass = 'alert-danger';
-                }
-                
-              }
-
-            } 
-            else {
-            // then failed and put stuff in massage vars
-            $msg = 'please fill in all fields';
-            $msgClass = 'alert-danger';
-
-            }
-
-          }// END ISSET
+        
         ?>
-      
-          <!-- if message is not equal to nothing. if that is true then we wont to put out the alert.  -->
-          <?php if ($msg != ''): ?><div class="<?php echo $msgClass ?>"><?php echo $msg ?></div><?php endif;?>
 
+       
+          
           <!-- form -->
-          <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+          <form method="post" action="mail.php">
             <p>
               <label for="fname">First Name</label>
               <input type="text" name="firstname" id="first_name" value="<?php echo isset($_POST['firstname']) ? $first_name : '' ?>" />
@@ -170,6 +109,7 @@
             <p>
               <label for="country">Country</label>
               <select id="country" name="country" value="<?php echo isset($_POST['country']) ? $country : '' ?>">
+                <option value="australia">Select</option>
                 <option value="australia">London</option>
                 <option value="canada">Canada</option>
                 <option value="usa">USA</option>
