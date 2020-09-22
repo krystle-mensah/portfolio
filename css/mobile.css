@@ -19,16 +19,65 @@
 		overflow: hidden;
 		background-color: #17252a;
 		position: relative;
+		height: 63px;
 	}
 
-	.topnav a {
-		color: #feffff;
+	a.hamburger_icon {
+    float: right;
+    display: block;
+    color: #def2f1;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+	}
+
+	a.mobile_brand_name {
+		float: left;
+		display: block;
 		padding: 14px 16px;
 		text-decoration: none;
-		font-size: 15px;
-		display: block;
-		text-transform: uppercase;
+		font-size: 17px;
 	}
+
+	.side_nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: #17252a;
+    opacity: 0.9;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+	}
+
+	.side_nav a {
+		padding: 10px 10px 10px 30px;
+		text-decoration: none;
+		font-size: 22px;
+		color: #def2f1;
+		display: block;
+		transition: 0.3s;
+		text-transform: uppercase;
+		font-family: 'Montserrat', sans-serif;
+	}
+
+	.side_nav a:hover {
+		color:#fff;
+	}
+
+	.side_nav .btn_close {
+		position: absolute;
+		top:0;
+		right: 22px;
+		font-size: 36px;
+		margin-left: 50px;
+	}
+
+	
 
 	h1.logo {
 		font-size: 1rem;
@@ -37,26 +86,6 @@
 	h1.logo:hover {
 		background-color: #def2f1;
 		color: #17252a;
-	}
-
-	.topnav a.hamburger-icon {
-		background: #17252a;
-		display: block;
-		position: absolute;
-		right: 0;
-		top: 0;
-	}
-
-	.topnav a:hover,
-	.topnava:focus {
-		background-color: #def2f1;
-		color: #17252a;
-		transition: background-color 1s ease-in;
-	}
-
-	.active {
-		background-color: #2b7a78;
-		/* color: #feffff; */
 	}
 
 	/* SHOWCASE LAYOUT MOBILE */

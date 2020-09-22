@@ -39,25 +39,30 @@
 
   <!-- MOBILE -->
   <div class="mobile-container hidden-on-large-screens">
-    <!-- Top Navigation Menu -->
-    <div class="topnav">
-      <a href="#">
-        <h1 class="logo">Krystle Mensah</h1>
-      </a>
+      <!-- Top Navigation Menu -->
+      <div class="topnav">
+        
+        <a class="mobile_brand_name" href="index.php">
+          <h1 class="logo">Krystle Mensah</h1>
+        </a><!-- moblie_brand_name -->
+        
+        <span class="open_slide">
+          <a class="hamburger_icon" href="#" onClick="openSlideMenu()">
+            <i class="fa fa-bars"></i>
+          </a><!-- onclick-->
+        </span>
 
-      <!-- <a href="#home" class="active">Logo</a> -->
-      <div id="myLinks">
-        <a href="index.php">home</a>
-        <a href="portfolio.php">portfolio</a>
-        <a href="about.php">about</a>
-        <a href="contact.php">contact</a>
-      </div>
-      <a href="javascript:void(0);" class="icon" onclick="mobileToggle()">
-        <i class="fa fa-bars"></i>
-      </a>
+        <div id="side_menu" onClick="closeSlideMenu()" class="side_nav">
+          <a href="#" class="btn_close">&times;</a>  
+          <a href="index.php">home</a>
+          <a href="portfolio.php">portfolio</a>
+          <a href="about.php">about</a>
+          <a href="contact.php">contact</a>
+        </div>
+
+      </div><!-- topnav -->
     </div>
-  </div>
-  <!-- MOBILE-CONTAINER -->
+    <!-- MOBILE-CONTAINER -->
 
   <section id="contact">
     <div class="contact-container">
