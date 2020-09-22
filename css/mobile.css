@@ -64,6 +64,19 @@
 	.showcase-container {
 		padding: 0 1rem;
 	}
+
+	/* PORFOLIO LAYOUT */
+	img.the-work-image {
+    margin: auto;
+	}
+
+	.work-links {
+    padding: 1em;
+    text-align: center;
+	}
+
+	/* END PORFOLIO LAYOUT */
+
 }
 
 @media (max-width: 500px) {
