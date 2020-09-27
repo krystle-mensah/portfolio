@@ -6,6 +6,7 @@
 body {
 	height: 100vh;
 	background-color: #3aafa9;
+	font-family: 'Montserrat', sans-serif;
 	line-height: 1.6;
 }
 
@@ -21,7 +22,6 @@ UTILITIES
 
 h1.the-page-title {
 	font-size: 3.5rem;
-	font-family: 'Montserrat', sans-serif;
 	margin: 0.4rem;
 }
 
@@ -65,7 +65,6 @@ HEADER LAYOUT
 
 header {
 	padding: 2em;
-	/* border-bottom: 2px solid #17252a; */
 }
 
 .header-container {
@@ -79,14 +78,11 @@ header {
 h1.logo {
 	font-size: 1.5rem;
 	color: #feffff;
-	font-family: 'Montserrat', sans-serif;
 }
 
 nav {
 	float: right;
 }
-
-/* .nav-container{} */
 
 .nav-container a {
 	margin: 1em 0em 1em 2em;
@@ -96,7 +92,6 @@ nav {
 	color: #feffff;
 	cursor: pointer;
 	text-decoration: none;
-	font-family: 'Montserrat', sans-serif;
 }
 
 .nav-container a:hover,
@@ -136,7 +131,6 @@ h1.the-showcase-title {
 
 .showcase-container h2 {
 	font-size: 2rem;
-	font-family: 'Montserrat', sans-serif;
 	color: #feffff;
 	margin: 0.4rem;
 }
@@ -144,9 +138,7 @@ h1.the-showcase-title {
 /*============
 ABOUT LAYOUT
 =================================*/
-
-/* #about {} */
-
+/*
 .about-container {
 	max-width: 1170px;
 	margin-left: auto;
@@ -158,11 +150,8 @@ ABOUT LAYOUT
 	padding: 1em;
 }
 
-/* .skills-container {}  */
-
 h3.skill-title {
 	margin: 1rem 0 1rem 0;
-	font-family: 'Montserrat', sans-serif;
 }
 
 .skills-content {
@@ -197,19 +186,16 @@ h3.skill-title {
 	color: #17252a;
 }
 
-/* .side-paragraph {} */
-
 .side-paragraph p {
 	line-height: 1.5;
-	font-family: 'Montserrat', sans-serif;
 	color: #feffff;
 	padding-top: 1em;
 }
 
 .side-paragraph h3 {
 	padding-top: 1em;
-	font-family: 'Montserrat', sans-serif;
 }
+*/
 
 /* CONTACT LAYOUT */
 
@@ -231,10 +217,6 @@ h3.skill-title {
 	padding: 1em;
 }
 
-/* .company-info {}  */
-
-/* .contact {} */
-
 /* FORM STYLES */
 
 .contact form {
@@ -245,7 +227,6 @@ h3.skill-title {
 
 .contact form label {
 	display: block;
-	font-family: 'Montserrat', sans-serif;
 }
 
 .contact form p {
@@ -261,7 +242,6 @@ input[type='text'],
 select,
 textarea {
 	width: 100%;
-	font-family: 'Montserrat', sans-serif;
 	padding: 1em;
 	border: 1px solid #17252a;
 	margin-top: 6px;
@@ -271,7 +251,6 @@ textarea {
 
 input[type='email'] {
 	width: 100%;
-	font-family: 'Montserrat', sans-serif;
 	padding: 1em;
 	border: 1px solid #17252a;
 	margin-top: 6px;
@@ -280,7 +259,6 @@ input[type='email'] {
 }
 
 input[type='submit'] {
-	font-family: 'Montserrat', sans-serif;
 	background-color: #17252a;
 	color: #feffff;
 	padding: 1em;
@@ -303,11 +281,9 @@ footer {
 	width: 100%;
 	background-color: #3aafa9;
 	padding: 0.5em;
-	/* border: 2px solid #2b7a78; */
 }
 
 footer p {
-	font-family: 'Montserrat', sans-serif;
 	color: #17252a;
 	font-weight: bold;
 	text-align: center;
@@ -353,8 +329,8 @@ footer p {
 @media (min-width: 1200px) {
 	h1.the-page-title {
 		font-size: 5rem;
-		font-family: 'Montserrat', sans-serif;
 	}
+
 }
 
 /*============
@@ -363,7 +339,6 @@ PORTFOLIO LAYOUT
 
 .main {
 	height: 77vh;
-	/* max-width: 1000px; */
 	margin: auto;
 }
 
@@ -380,7 +355,6 @@ PORTFOLIO LAYOUT
 	display: flex;
 	height: 100%;
 	justify-content: center;
-	/* padding: 0 3rem; */
 }
 
 h1.the-portfolio-title {
@@ -393,7 +367,7 @@ h1.the-portfolio-title {
 
 img.the-work-image {
 	display: block;
-	width: 50%;
+	width: 30%;
 	height: auto;
 	box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
 }
@@ -407,7 +381,6 @@ a.the-work-link {
 	text-decoration: none;
 	text-transform: capitalize;
 	color: #feffff;
-	font-family: 'Montserrat', sans-serif;
 }
 
 a.the-work-link:hover,

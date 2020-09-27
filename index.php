@@ -30,7 +30,7 @@
           <div class="nav-container">
             <a href="index.php">home</a>
             <a href="portfolio.php">portfolio</a>
-            <a href="about.php">about</a>
+            <!-- <a href="about.php">about</a> -->
             <a href="contact.php">contact</a>
           </div>
           <!-- nav-container -->
@@ -58,7 +58,7 @@
           <a href="#" class="btn_close">&times;</a>  
           <a href="index.php">home</a>
           <a href="portfolio.php">portfolio</a>
-          <a href="about.php">about</a>
+          <!-- <a href="about.php">about</a> -->
           <a href="contact.php">contact</a>
         </div>
       

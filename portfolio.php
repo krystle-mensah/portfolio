@@ -59,7 +59,7 @@
           <a href="#" class="btn_close">&times;</a>  
           <a href="index.php">home</a>
           <a href="portfolio.php">portfolio</a>
-          <a href="about.php">about</a>
+          <!-- <a href="about.php">about</a> -->
           <a href="contact.php">contact</a>
         </div>
           
@@ -92,7 +92,6 @@
              
               <!-- work links -->
               <div class="work-links">
-                <!-- <a class="the-work-link" href="https://bitbucket.org/studentbridge/community-college-system-of-new-hampshire/src/master/" target="_blank">git hub</a> -->
                 <a class="the-work-link" href="https://ccsnh.college-tour.com/"  target="_blank">live site</a>
               </div><!-- work-links -->
               <!--work image  -->
@@ -104,6 +103,17 @@
               <div class="work-links">
                 <a class="the-work-link" href="https://djgear.herokuapp.com/"  target="_blank">live site</a>
               </div><!-- work-links -->
+
+              <!--work image  -->
+              <div class="work-image">
+                <img class="the-work-image" src="img/work-1.jpg" alt="">
+              </div><!-- work-image -->
+              <!-- work links -->
+              <div class="work-links">
+                <a class="the-work-link" href="#"  target="_blank">live site</a>
+              </div><!-- work-links -->
+
+              
               
             </div><!-- work-container -->
           </div><!-- work -->
