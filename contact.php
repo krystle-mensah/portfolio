@@ -21,8 +21,7 @@
     <div class="header-container">
       <div class="logo-container">
         <h1 class="logo">Krystle Mensah</h1>
-      </div>
-      <!-- logo-container -->
+      </div><!-- logo-container -->
 
       <nav>
         <div class="nav-container">
@@ -56,7 +55,6 @@
           <a href="#" class="btn_close">&times;</a>  
           <a href="index.php">home</a>
           <a href="portfolio.php">portfolio</a>
-          <!-- <a href="about.php">about</a> -->
           <a href="contact.php">contact</a>
         </div>
 
@@ -80,20 +78,14 @@
 
         <div class="contact">
 
-        <?php 
-
-        if( isset($_SESSION[ 'msg' ]) && ($_SESSION['msgClass'])){
+        <?php if( isset($_SESSION[ 'msg' ]) && ($_SESSION['msgClass'])):
 
           $msg = $_SESSION['msg'];
           $msgClass = $_SESSION['msgClass'];
 
-          //echo "<div>$msg</div>";
           echo "<div class='alert $msgClass'>$msg</div>";
           session_destroy();
-        }
-        
-        
-        ?>
+        endif; ?>
 
        
           

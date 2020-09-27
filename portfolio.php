@@ -35,8 +35,7 @@
           </div>
           <!-- nav-container -->
         </nav>
-      </div>
-      <!-- header-container -->
+      </div><!-- header-container -->
     </header>
 
     <!-- MOBILE -->
@@ -68,12 +67,11 @@
     </div>
     <!-- MOBILE-CONTAINER -->
     
-    <!-- section class about -->
     <section class="main">
       
       <!-- div class container -->
       <div class="portfolio-container">
-        <div class="grid-2">
+        <!-- <div class="grid-2"> -->
           
           <!-- div class center -->
           <div class="page-title">
@@ -82,45 +80,51 @@
             </div><!-- page-title-container -->
           </div>
 
-          <!-- this is my 2nd grid item called div -->
           <div class="work">
             <div class="work-container">
-              <!--work image  -->
-              <div class="work-image">
-                <img class="the-work-image" src="img/work-1.jpg" alt="">
-              </div><!-- work-image -->
-             
-              <!-- work links -->
-              <div class="work-links">
-                <a class="the-work-link" href="https://ccsnh.college-tour.com/"  target="_blank">live site</a>
-              </div><!-- work-links -->
-              <!--work image  -->
-              <div class="work-image">
-                <img class="the-work-image" src="img/djgear.jpg" alt="">
-              </div><!-- work-image -->
-             
-              <!-- work links -->
-              <div class="work-links">
-                <a class="the-work-link" href="https://djgear.herokuapp.com/"  target="_blank">live site</a>
-              </div><!-- work-links -->
 
-              <!--work image  -->
-              <div class="work-image">
+              <!--WORK-->
+              <div class="work">
                 <img class="the-work-image" src="img/work-1.jpg" alt="">
-              </div><!-- work-image -->
-              <!-- work links -->
-              <div class="work-links">
-                <a class="the-work-link" href="#"  target="_blank">live site</a>
-              </div><!-- work-links -->
+                <!-- work link -->
+                <div class="work-link">
+                  <a class="the-work-link" href="https://ccsnh.college-tour.com/"  target="_blank">live site</a>
+                </div><!-- work_link -->
+              
+              </div><!-- work -->
+              <!-- END WORK -->
+              <!--WORK-->
+              <div class="work">
+                <img class="the-work-image" src="img/work-1.jpg" alt="">
+                <!-- work link -->
+                <div class="work-link">
+                  <a class="the-work-link" href="https://ccsnh.college-tour.com/"  target="_blank">live site</a>
+                </div><!-- work_link -->
+              </div><!-- work -->
+              <!-- END WORK -->
+              <!--WORK-->
+              <div class="work">
+                <img class="the-work-image" src="img/work-1.jpg" alt="">
+                <!-- work link -->
+                <div class="work-link">
+                  <a class="the-work-link" href="https://ccsnh.college-tour.com/"  target="_blank">live site</a>
+                </div><!-- work_link -->
+              </div><!-- work -->
+              <!-- END WORK -->
+              <!--WORK-->
+              <div class="work">
+                <img class="the-work-image" src="img/work-1.jpg" alt="">
+                <!-- work link -->
+                <div class="work-link">
+                  <a class="the-work-link" href="https://ccsnh.college-tour.com/"  target="_blank">live site</a>
+                </div><!-- work_link -->
+              </div><!-- work -->
+              <!-- END WORK -->
 
-              
-              
             </div><!-- work-container -->
           </div><!-- work -->
-
-        </div> <!-- grid-2 --> 
       </div><!-- portfolio-container -->
-    </section><!-- showcase -->
+    </section>
 
     <footer>
       <p>&copy;2020 Krystle Mensah | All rights reversed</p>

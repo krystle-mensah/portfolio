@@ -136,66 +136,11 @@ h1.the-showcase-title {
 }
 
 /*============
-ABOUT LAYOUT
+LAYOUT
 =================================*/
-/*
-.about-container {
-	max-width: 1170px;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 1em;
-}
 
-.about-wrapper > * {
-	padding: 1em;
-}
+/* END */
 
-h3.skill-title {
-	margin: 1rem 0 1rem 0;
-}
-
-.skills-content {
-	width: 100%;
-	background-color: #feffff;
-	border-radius: 20px;
-}
-
-.skills {
-	text-align: right;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	color: #feffff;
-}
-
-.html {
-	width: 90%;
-	background-color: #17252a;
-}
-.css {
-	width: 80%;
-	background-color: #2b7a78;
-}
-
-.js {
-	width: 65%;
-	background-color: #2b7a78;
-}
-.php {
-	width: 60%;
-	background-color: #def2f1;
-	color: #17252a;
-}
-
-.side-paragraph p {
-	line-height: 1.5;
-	color: #feffff;
-	padding-top: 1em;
-}
-
-.side-paragraph h3 {
-	padding-top: 1em;
-}
-*/
 
 /* CONTACT LAYOUT */
 
@@ -333,21 +278,21 @@ footer p {
 
 }
 
+
 /*============
 PORTFOLIO LAYOUT
 =================================*/
 
-.main {
+/* .main {
 	height: 77vh;
 	margin: auto;
-}
+} */
 
 .portfolio-container {
-	flex-direction: column;
-	display: flex;
-	height: 100%;
-	justify-content: center;
-	padding: 0 3rem;
+	max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
 }
 
 .page-title-container {
@@ -361,18 +306,27 @@ h1.the-portfolio-title {
 	color: #17252a;
 }
 
-.work-image {
+.work-container {
+	flex-direction: row;
+	display: flex;
+	/* height: 100%; */
+	justify-content: center;
+	margin: auto;
+}
+
+.work {
 	padding: 1em;
+	height: 60vh;
 }
 
 img.the-work-image {
 	display: block;
-	width: 30%;
+	width: 70%;
 	height: auto;
 	box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
 }
 
-.work-links {
+.work_link {
 	padding: 1em;
 }
 
