@@ -77,8 +77,6 @@
 		margin-left: 50px;
 	}
 
-	
-
 	h1.logo {
 		font-size: 1rem;
 	}
@@ -95,12 +93,18 @@
 	}
 
 	/* PORFOLIO LAYOUT */
-	img.the-work-image {
-    margin: auto;
+
+	.work {
+		height: auto;
 	}
 
-	.work_link {
-    text-align: center;
+	.work-container {
+		flex-direction: column;
+	}
+
+	img.the-work-image {
+		margin: auto;
+		width: 50%;
 	}
 
 	/* END PORFOLIO LAYOUT */

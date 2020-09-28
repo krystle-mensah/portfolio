@@ -83,44 +83,44 @@
           <div class="work">
             <div class="work-container">
 
-              <!--WORK-->
-              <div class="work">
-                <img class="the-work-image" src="img/work-1.jpg" alt="">
-                <!-- work link -->
-                <div class="work-link">
-                  <a class="the-work-link" href="https://ccsnh.college-tour.com/"  target="_blank">live site</a>
-                </div><!-- work_link -->
-              
-              </div><!-- work -->
-              <!-- END WORK -->
-              <!--WORK-->
-              <div class="work">
-                <img class="the-work-image" src="img/work-1.jpg" alt="">
-                <!-- work link -->
-                <div class="work-link">
-                  <a class="the-work-link" href="https://ccsnh.college-tour.com/"  target="_blank">live site</a>
-                </div><!-- work_link -->
-              </div><!-- work -->
-              <!-- END WORK -->
-              <!--WORK-->
-              <div class="work">
-                <img class="the-work-image" src="img/work-1.jpg" alt="">
-                <!-- work link -->
-                <div class="work-link">
-                  <a class="the-work-link" href="https://ccsnh.college-tour.com/"  target="_blank">live site</a>
-                </div><!-- work_link -->
-              </div><!-- work -->
-              <!-- END WORK -->
-              <!--WORK-->
-              <div class="work">
-                <img class="the-work-image" src="img/work-1.jpg" alt="">
-                <!-- work link -->
-                <div class="work-link">
-                  <a class="the-work-link" href="https://ccsnh.college-tour.com/"  target="_blank">live site</a>
-                </div><!-- work_link -->
-              </div><!-- work -->
-              <!-- END WORK -->
+              <!--work-->
+              <a class="work_item" href="https://ccsnh.college-tour.com/" target="_blank">
+                <div class="work_item_container">
 
+                  <img class="the-work-image" src="img/work-1.jpg" alt="">
+
+                </div><!-- work_item_container -->
+              </a><!-- work_item -->
+              <!-- end -->
+              
+              <!--work-->
+              <a class="work_item" href="https://newman.university-tour.com/" target="_blank">
+                <div class="work_item_container">
+
+                  <img class="the-work-image" src="img/newman.jpg" alt="">
+
+                </div><!-- work_item_container -->
+              </a><!-- work_item -->
+              <!-- END WORK -->
+              <!--WORK-->
+              <a class="work_item" href="https://law-wustl.university-tour.com/" target="_blank">
+                <div class="work_item_container">
+
+                  <img class="the-work-image" src="img/washington.jpg" alt="">
+
+                </div><!-- work_item_container -->
+              </a><!-- work_item -->
+              <!-- END WORK -->
+              <!--WORK-->
+              <a class="work_item" href="https://djgear.herokuapp.com/" target="_blank">
+                <div class="work_item_container">
+
+                  <img class="the-work-image" src="img/djgear.jpg" alt="">
+
+                </div><!-- work_item_container -->
+              </a><!-- work_item -->
+              <!-- END WORK -->
+          
             </div><!-- work-container -->
           </div><!-- work -->
       </div><!-- portfolio-container -->

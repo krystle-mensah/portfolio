@@ -283,16 +283,11 @@ footer p {
 PORTFOLIO LAYOUT
 =================================*/
 
-/* .main {
-	height: 77vh;
-	margin: auto;
-} */
-
 .portfolio-container {
 	max-width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1em;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1em;
 }
 
 .page-title-container {
@@ -309,7 +304,6 @@ h1.the-portfolio-title {
 .work-container {
 	flex-direction: row;
 	display: flex;
-	/* height: 100%; */
 	justify-content: center;
 	margin: auto;
 }
@@ -319,29 +313,29 @@ h1.the-portfolio-title {
 	height: 60vh;
 }
 
+a.work_item {
+	margin: 1em;
+}
+
 img.the-work-image {
 	display: block;
-	width: 70%;
+	width: 100%;
 	height: auto;
 	box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
 }
 
-.work_link {
-	padding: 1em;
-}
-
-a.the-work-link {
+/* a.the-work-link {
 	margin-right: 1rem;
 	text-decoration: none;
 	text-transform: capitalize;
 	color: #feffff;
-}
+} */
 
-a.the-work-link:hover,
+/* a.the-work-link:hover,
 a.the-work-link:focus {
 	color: #17252a;
 	transition: color 0.5s ease-out;
-}
+} */
 
 /*
 END PORTFOLIO LAYOUT
