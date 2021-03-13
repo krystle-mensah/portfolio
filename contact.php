@@ -87,13 +87,6 @@
           //endif; 
           ?>
 
-          <h5><?= $_SESSION['result'];
-              //session_destroy();
-              ?>
-
-          </h5>
-
-
           <!-- form -->
           <form method="post" action="mail1.php">
             <p>
