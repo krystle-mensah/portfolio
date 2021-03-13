@@ -1,5 +1,7 @@
-<?php session_start(); ?>
+<?php session_start();
 
+?>
+<!-- new URL: https://portfoliokrystlemensah.herokuapp.com/ -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -38,66 +40,69 @@
 
   <!-- MOBILE -->
   <div class="mobile-container hidden-on-large-screens">
-      <!-- Top Navigation Menu -->
-      <div class="topnav">
-        
-        <a class="mobile_brand_name" href="index.php">
-          <h1 class="logo">Krystle Mensah</h1>
-        </a><!-- moblie_brand_name -->
-        
-        <span class="open_slide">
-          <a class="hamburger_icon" href="#" onClick="openSlideMenu()">
-            <i class="fa fa-bars"></i>
-          </a><!-- onclick-->
-        </span>
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
 
-        <div id="side_menu" onClick="closeSlideMenu()" class="side_nav">
-          <a href="#" class="btn_close">&times;</a>  
-          <a href="index.php">home</a>
-          <a href="portfolio.php">portfolio</a>
-          <a href="contact.php">contact</a>
-        </div>
+      <a class="mobile_brand_name" href="index.php">
+        <h1 class="logo">Krystle Mensah</h1>
+      </a><!-- moblie_brand_name -->
 
-      </div><!-- topnav -->
-    </div>
-    <!-- MOBILE-CONTAINER -->
+      <span class="open_slide">
+        <a class="hamburger_icon" href="#" onClick="openSlideMenu()">
+          <i class="fa fa-bars"></i>
+        </a><!-- onclick-->
+      </span>
+
+      <div id="side_menu" onClick="closeSlideMenu()" class="side_nav">
+        <a href="#" class="btn_close">&times;</a>
+        <a href="index.php">home</a>
+        <a href="portfolio.php">portfolio</a>
+        <a href="contact.php">contact</a>
+      </div>
+
+    </div><!-- topnav -->
+  </div>
+  <!-- MOBILE-CONTAINER -->
 
   <section id="contact">
     <div class="contact-container">
-      
+
       <div class="page-title">
         <h1 class="the-contact-title the-page-title">contact</h1>
       </div>
-
       <div class="contact-wrapper">
         <div class="company-info">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2486.216446521434!2d-0.19690998480919586!3d51.45418232241468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760f66df5ea103%3A0xaf1c1c365f7960be!2sNeville%20Gill%20Cl%2C%20Wandsworth%2C%20London%20SW18%204BP!5e0!3m2!1sen!2suk!4v1580053495192!5m2!1sen!2suk"
-            width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2486.216446521434!2d-0.19690998480919586!3d51.45418232241468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760f66df5ea103%3A0xaf1c1c365f7960be!2sNeville%20Gill%20Cl%2C%20Wandsworth%2C%20London%20SW18%204BP!5e0!3m2!1sen!2suk!4v1580053495192!5m2!1sen!2suk" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
         </div><!-- company-map -->
 
         <div class="contact">
 
-        <?php if( isset($_SESSION[ 'msg' ]) && ($_SESSION['msgClass'])):
+          <?php //if (isset($_SESSION['msg']) && ($_SESSION['msgClass'])) :
 
-          $msg = $_SESSION['msg'];
-          $msgClass = $_SESSION['msgClass'];
+          // $msg = $_SESSION['msg'];
+          // $msgClass = $_SESSION['msgClass'];
 
-          echo "<div class='alert $msgClass'>$msg</div>";
-          session_destroy();
-        endif; ?>
+          // echo "<div class='alert $msgClass'>$msg</div>";
+          // session_destroy();
+          //endif; 
+          ?>
 
-       
-          
+          <h5><?= $_SESSION['result'];
+              //session_destroy();
+              ?>
+
+          </h5>
+
+
           <!-- form -->
-          <form method="post" action="mail.php">
+          <form method="post" action="mail1.php">
             <p>
               <label for="fname">First Name</label>
               <input type="text" name="firstname" id="first_name" value="<?php echo isset($_POST['firstname']) ? $first_name : '' ?>" />
             </p>
             <p>
               <label for="lname">Last Name</label>
-              <input type="text" name="lastname" id="last_name" value="<?php echo isset($_POST['lastname']) ? $last_name : '' ?>"  />
+              <input type="text" name="lastname" id="last_name" value="<?php echo isset($_POST['lastname']) ? $last_name : '' ?>" />
             </p>
             <p>
               <label for="email">Your Email</label>
@@ -114,8 +119,7 @@
             </p>
             <p class="full">
               <label for="subject">Subject</label>
-              <textarea id="subject" name="message" value="<?php echo isset($_POST['subject']) ? $message : '' ?>"
-                style="height:170px"></textarea>
+              <textarea id="subject" name="message" value="<?php echo isset($_POST['subject']) ? $message : '' ?>" style="height:170px"></textarea>
             </p>
 
             <p class="full">

@@ -9,7 +9,8 @@ $_SESSION['msgClass'] = '';
 //check form submits
 if (filter_has_var(INPUT_POST, 'submit')) {
   //check if submitted that you get this message
-  //echo "Submitted";
+  require 'phpmail/PHPMailAutoload.php';
+  echo "Submitted";
 
   //also send user back to contact page.
   header("Location: contact.php");
@@ -44,7 +45,7 @@ if (filter_has_var(INPUT_POST, 'submit')) {
       $_SESSION['msgClass'] = "alert-success";
     } else {
       // then if it fails
-      $_SESSION['msg'] = "Your email was not send";
+      $_SESSION['msg'] = "Your email was not sent";
       $_SESSION['msgClass'] = "alert-danger";
     }
   } else {
