@@ -1,7 +1,7 @@
-<?php session_start();
-
+<?php
+session_start();
 ?>
-<!-- new URL: https://portfoliokrystlemensah.herokuapp.com/ -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -77,18 +77,18 @@
 
         <div class="contact">
 
-          <?php //if (isset($_SESSION['msg']) && ($_SESSION['msgClass'])) :
+          <?php if (isset($_SESSION['msg']) && ($_SESSION['msgClass'])) :
 
-          // $msg = $_SESSION['msg'];
-          // $msgClass = $_SESSION['msgClass'];
+            $msg = $_SESSION['msg'];
+            $msgClass = $_SESSION['msgClass'];
 
-          // echo "<div class='alert $msgClass'>$msg</div>";
-          // session_destroy();
-          //endif; 
+            echo "<div class='alert $msgClass'>$msg</div>";
+            session_destroy();
+          endif;
           ?>
 
           <!-- form -->
-          <form method="post" action="mail1.php">
+          <form method="post" action="mail.php">
             <p>
               <label for="fname">First Name</label>
               <input type="text" name="firstname" id="first_name" value="<?php echo isset($_POST['firstname']) ? $first_name : '' ?>" />

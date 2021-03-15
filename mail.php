@@ -1,56 +1,68 @@
 <?php
-session_start();
 
-// messages variables
-$_SESSION['msg'] = '';
-$_SESSION['msgClass'] = '';
+//Import PHPMailer classes into the global namespace
+//These must be at the top of your script, not inside a function
+//define name spaces
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
 
+//Load Composer's autoloader
+require 'vendor/autoload.php';
 
-//check form submits
-if (filter_has_var(INPUT_POST, 'submit')) {
-  //check if submitted that you get this message
-  require 'phpmail/PHPMailAutoload.php';
-  echo "Submitted";
+//Include required php mailer files
+require 'phpmailer/PHPMailer.php';
+require 'phpmailer/SMTP.php';
+require 'phpmailer/Exception.php';
 
-  //also send user back to contact page.
-  header("Location: contact.php");
+//Instantiation and passing `true` enables exceptions
+// create instance of php mailer
+$mail = new PHPMailer(true);
 
-  // also collect user form data 
-  $first_name = htmlspecialchars($_POST['firstname']);
-  $last_name = htmlspecialchars($_POST['lastname']);
-  $email = htmlspecialchars($_POST['email']);
-  $message = htmlspecialchars($_POST['message']);
-  $country = htmlspecialchars($_POST['country']);
+// check if the submit is dectected
+if (isset($_POST['submit'])) {
+  //echo "submitted";
+  try {
+    //Server settings
+    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+    $mail->isSMTP();                                            //Send using SMTP
+    $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
+    $mail->SMTPAuth   = true;
+    // who is senting the email                                   //Enable SMTP authentication
+    $mail->Username   = 'krystle.mensah@gmail.com';                //SMTP username
+    // senders gmail password
+    $mail->Password   = 'yycpX2<T!nj?_rMu';                               //SMTP password
+    //$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         //Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
+    $mail->Port       = 587;                                    //TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
-  //check that the fields are not empty
-  if (!empty($first_name) && !empty($last_name) && !empty($email) && !empty($message) && !empty($country)) {
+    //Recipients
+    // this is where the email was sent to
+    $mail->setFrom($_POST['email']);
+    $mail->addAddress('krystle.webdev@gmail.com');     //Add a recipient
+    //$mail->addAddress('ellen@example.com');               //Name is optional
+    //$mail->addReplyTo('info@example.com', 'Information');
+    //$mail->addCC('cc@example.com');
+    //$mail->addBCC('bcc@example.com');
 
-    $to_email = 'krystle.mensah@gmail.com';
-    $subject = 'Contact Request From: ' . $first_name;
-    $body = '<h2>Contact Request</h2> 
-          <h4>First Name</h4><p>' . $first_name . '</p> 
-          <h4>Last Name</h4><p>' . $last_name . '</p> 
-          <h4>Email</h4><p>' . $email . '</p>
-          <h4>Message</h4><p>' . $message . '</p>
-        ';
+    //Attachments
+    //$mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
+    //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    //Optional name
 
-    $headers = "MIME-Version: 1.0" . "\r\n";
-    $headers .= "Content-Type:text/html;charset=UTF-8" . "
-        \r\n";
-    $headers .= "From: " . $first_name . "<" . $email . ">" . "\r\n";
+    //Content
+    $mail->isHTML(true);                                  //Set email format to HTML
+    $mail->Subject = 'New Message from website';
+    $mail->Body    = '<h2>Contact Request</h2> 
+    <h4>First Name</h4><p>' . $_POST['firstname'] . '</p> 
+    <h4>Last Name</h4><p>' . $_POST['lastname'] . '</p> 
+    <h4>Email</h4><p>' . $_POST['email'] . '</p>
+    <h4>Message</h4><p>' . $_POST['message'] . '</p>
+  ';
+    //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
-    if (mail($to_email, $subject, $body, $headers)) {
-      // email sent
-      $_SESSION['msg'] = "Your email has been sent";
-      $_SESSION['msgClass'] = "alert-success";
-    } else {
-      // then if it fails
-      $_SESSION['msg'] = "Your email was not sent";
-      $_SESSION['msgClass'] = "alert-danger";
-    }
-  } else {
-    //  fail
-    $_SESSION['msg'] = "Please fill in all fields";
-    $_SESSION['msgClass'] = "alert-danger";
+    $mail->send();
+    //header('Location: contact.php'); // this does work but I need a message on the contact page
+    echo 'Message has been sent';
+  } catch (Exception $e) {
+    echo 'Message could not be sent. Mailer Error: {$mail->ErrorInfo}';
   }
 }
