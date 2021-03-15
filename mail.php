@@ -1,4 +1,7 @@
 <?php
+// message vars
+$msg = '';
+$msgClass = '';
 
 //Import PHPMailer classes into the global namespace
 //These must be at the top of your script, not inside a function
@@ -60,9 +63,11 @@ if (isset($_POST['submit'])) {
     //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
-    //header('Location: contact.php'); // this does work but I need a message on the contact page
-    echo 'Message has been sent';
+    header('Location: contact.php?success');
   } catch (Exception $e) {
-    echo 'Message could not be sent. Mailer Error: {$mail->ErrorInfo}';
+
+    header('Location: contact.php?error');
   }
+} else {
+  header("location: contact.php");
 }

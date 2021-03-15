@@ -76,15 +76,16 @@ session_start();
         </div><!-- company-map -->
 
         <div class="contact">
-
-          <?php if (isset($_SESSION['msg']) && ($_SESSION['msgClass'])) :
-
-            $msg = $_SESSION['msg'];
-            $msgClass = $_SESSION['msgClass'];
-
-            echo "<div class='alert $msgClass'>$msg</div>";
-            session_destroy();
-          endif;
+          <?php
+          $Msg = "";
+          if (isset($_GET['success'])) {
+            $Msg = "Message has been sent";
+            echo  $Msg;
+          }
+          if (isset($_GET['error'])) {
+            $Msg = "Message could not be sent";
+            echo  $Msg;
+          }
           ?>
 
           <!-- form -->
