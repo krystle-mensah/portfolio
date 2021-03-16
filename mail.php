@@ -1,10 +1,9 @@
 <?php
-// message vars
-$msg = '';
-$msgClass = '';
+/*
+Import PHPMailer classes into the global namespace
+These must be at the top of your script, not inside a function
+*/
 
-//Import PHPMailer classes into the global namespace
-//These must be at the top of your script, not inside a function
 //define name spaces
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
@@ -24,48 +23,33 @@ $mail = new PHPMailer(true);
 
 // check if the submit is dectected
 if (isset($_POST['submit'])) {
-  //echo "submitted";
   try {
     //Server settings
-    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
-    $mail->isSMTP();                                            //Send using SMTP
-    $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
+    $mail->SMTPDebug = SMTP::DEBUG_SERVER;
+    $mail->isSMTP();
+    $mail->Host       = 'smtp.gmail.com';
     $mail->SMTPAuth   = true;
-    // who is senting the email                                   //Enable SMTP authentication
-    $mail->Username   = 'krystle.mensah@gmail.com';                //SMTP username
-    // senders gmail password
-    $mail->Password   = 'yycpX2<T!nj?_rMu';                               //SMTP password
-    //$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         //Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
-    $mail->Port       = 587;                                    //TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+    $mail->Username   = 'krystle.mensah@gmail.com';
+    $mail->Password   = 'yycpX2<T!nj?_rMu';
+    $mail->Port       = 587;
 
     //Recipients
-    // this is where the email was sent to
     $mail->setFrom($_POST['email']);
-    $mail->addAddress('krystle.webdev@gmail.com');     //Add a recipient
-    //$mail->addAddress('ellen@example.com');               //Name is optional
-    //$mail->addReplyTo('info@example.com', 'Information');
-    //$mail->addCC('cc@example.com');
-    //$mail->addBCC('bcc@example.com');
-
-    //Attachments
-    //$mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
-    //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    //Optional name
+    $mail->addAddress('krystle.webdev@gmail.com');
 
     //Content
-    $mail->isHTML(true);                                  //Set email format to HTML
+    $mail->isHTML(true);
     $mail->Subject = 'New Message from website';
     $mail->Body    = '<h2>Contact Request</h2> 
     <h4>First Name</h4><p>' . $_POST['firstname'] . '</p> 
     <h4>Last Name</h4><p>' . $_POST['lastname'] . '</p> 
     <h4>Email</h4><p>' . $_POST['email'] . '</p>
-    <h4>Message</h4><p>' . $_POST['message'] . '</p>
-  ';
-    //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+    <h4>Message</h4><p>' . $_POST['message'] . '</p>';
 
     $mail->send();
+    // then send user back to contact page and send a message
     header('Location: contact.php?success');
   } catch (Exception $e) {
-
     header('Location: contact.php?error');
   }
 } else {
