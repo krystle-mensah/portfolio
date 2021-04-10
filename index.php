@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php include('admin/db.php'); ?>
 
 <head>
   <meta charset="UTF-8" />
