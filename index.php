@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include('admin/db.php'); ?>
+<?php //include('admin/db.php'); 
+?>
 
 <head>
   <meta charset="UTF-8" />
@@ -19,11 +20,11 @@
   <header class="hidden-on-small-screens">
 
     <?php
-    $query = "SELECT * FROM users";
-    $select_all_posts_query = mysqli_query($connection, $query);
-    while ($row = mysqli_fetch_array($select_all_posts_query)) {
-      echo   $user = $row['user'];
-    }
+    // $query = "SELECT * FROM users";
+    // $select_all_posts_query = mysqli_query($connection, $query);
+    // while ($row = mysqli_fetch_array($select_all_posts_query)) {
+    //   echo   $user = $row['user'];
+    // }
     ?>
 
     <div class="header-container">
