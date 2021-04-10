@@ -17,6 +17,15 @@
 
 <body>
   <header class="hidden-on-small-screens">
+
+    <?php
+    $query = "SELECT * FROM users";
+    $select_all_posts_query = mysqli_query($connection, $query);
+    while ($row = mysqli_fetch_array($select_all_posts_query)) {
+      echo   $user = $row['user'];
+    }
+    ?>
+
     <div class="header-container">
       <div class="logo-container">
         <h1 class="logo">Krystle Mensah</h1>
