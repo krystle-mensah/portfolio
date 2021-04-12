@@ -74,7 +74,7 @@
       <!-- DATA is a html5 attribute that allows custom stuff. data-words is an array of javascript objects -->
       <h1 class="the-showcase-title the-page-title ">
         Hi, I'm a
-        <span class="txt-type" data-wait="3000" data-words='["Developer", "Designer", "Musician"]'></span>
+        <span class="txt-type" data-wait="3000" data-words='["Developer"]'></span>
       </h1>
       <h2>
         welcome to my website
