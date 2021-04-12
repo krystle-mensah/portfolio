@@ -122,7 +122,7 @@
   </section>
 
   <footer>
-    <p>&copy;2020 Krystle Mensah | All rights reversed</p>
+    <p><?php echo date("Y"); ?> &#169; Krystle Mensah | All rights reversed</p>
   </footer>
 
   <script src="js/mobile.js"></script>
