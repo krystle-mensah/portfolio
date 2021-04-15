@@ -82,7 +82,16 @@
           <a class="work_item" href="https://ccsnh.college-tour.com/" target="_blank">
             <div class="work_item_container">
 
-              <img class="the-work-image" src="img/work-1.jpg" alt="">
+              <img class="the-work-image" src="img/ccsnh.jpg" alt="">
+
+            </div><!-- work_item_container -->
+          </a><!-- work_item -->
+          <!-- end -->
+          <!--work-->
+          <a class="work_item" href="https://inspired-sound.herokuapp.com/" target="_blank">
+            <div class="work_item_container">
+
+              <img class="the-work-image" src="img/inspired.jpeg" alt="">
 
             </div><!-- work_item_container -->
           </a><!-- work_item -->
