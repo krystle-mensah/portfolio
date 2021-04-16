@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <!-- css -->
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/mobile.css" />
+  <!-- <link rel="stylesheet" href="css/mobile.css" /> -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="icon" href="favicon.ico">
@@ -71,59 +71,62 @@
       <!-- div class center -->
       <div class="page-title">
         <div class="page-title-container">
-          <h1 class="the-portfolio-title the-page-title">portfolio</h1>
+          <h1 class="portfolio_title the-page-title">portfolio</h1>
         </div><!-- page-title-container -->
       </div>
 
       <div class="work">
         <div class="work-container">
+          <hr class="hidden-on-small-screens">
+          <!-- work -->
+          <div class="work_item">
+            <img class="the-work-image" src="img/washington.jpg" alt="">
+            <div class="work_description">
+              <h3>Washington University tour</h3>
+              <p>work project for imedia8</p>
+              <a class="button" href="https://law-wustl.university-tour.com/" target="_blank">view site</a>
+            </div><!-- work_description -->
+          </div><!-- work_item_container -->
+          <!-- end work -->
+
+          <hr class="hidden-on-small-screens">
+
+          <!-- work -->
+          <div class="work_item">
+            <img class="the-work-image" src="img/inspired.jpeg" alt="">
+            <div class="work_description">
+              <h3>inspired Sound Music Blog</h3>
+              <p>Blog with custom content management system</p>
+              <a class="button" href="https://inspired-sound.herokuapp.com/" target="_blank">view site</a>
+              <a class="button" href="https://github.com/krystle-mensah/inspired" target="_blank">view git</a>
+            </div><!-- work_description -->
+          </div><!-- work_item -->
+          <!-- end work -->
 
           <!--work-->
-          <a class="work_item" href="https://ccsnh.college-tour.com/" target="_blank">
-            <div class="work_item_container">
+          <!-- <div class="work_item">
+            <img class="the-work-image" src="img/newman.jpg" alt="">
+            <div class="work_description">
+              <h3>newman university tour</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur doloribus eligendi quasi sit nihil architecto repellat totam fugiat blanditiis saepe.</p>
+              <a class="button" href="https://newman.university-tour.com/" target="_blank">view site</a>
+            </div>
+          </div> -->
+          <!-- end work -->
 
-              <img class="the-work-image" src="img/ccsnh.jpg" alt="">
-
-            </div><!-- work_item_container -->
-          </a><!-- work_item -->
-          <!-- end -->
-          <!--work-->
-          <a class="work_item" href="https://inspired-sound.herokuapp.com/" target="_blank">
-            <div class="work_item_container">
-
-              <img class="the-work-image" src="img/inspired.jpeg" alt="">
-
-            </div><!-- work_item_container -->
-          </a><!-- work_item -->
-          <!-- end -->
+          <hr class="hidden-on-small-screens">
 
           <!--work-->
-          <a class="work_item" href="https://newman.university-tour.com/" target="_blank">
-            <div class="work_item_container">
+          <!-- <div class="work_item">
+            <img class="the-work-image" src="img/ccsnh.jpg" alt="">
+            <div class="work_description">
+              <h3>ccsnh college tour</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur doloribus eligendi quasi sit nihil architecto repellat totam fugiat blanditiis saepe.</p>
+              <a class="button" href="https://ccsnh.college-tour.com/" target="_blank">view site</a>
+            </div>
+          </div> -->
 
-              <img class="the-work-image" src="img/newman.jpg" alt="">
-
-            </div><!-- work_item_container -->
-          </a><!-- work_item -->
-          <!-- END WORK -->
-          <!--WORK-->
-          <a class="work_item" href="https://law-wustl.university-tour.com/" target="_blank">
-            <div class="work_item_container">
-
-              <img class="the-work-image" src="img/washington.jpg" alt="">
-
-            </div><!-- work_item_container -->
-          </a><!-- work_item -->
-          <!-- END WORK -->
-          <!--WORK-->
-          <a class="work_item" href="https://djgear.herokuapp.com/" target="_blank">
-            <div class="work_item_container">
-
-              <img class="the-work-image" src="img/djgear.jpg" alt="">
-
-            </div><!-- work_item_container -->
-          </a><!-- work_item -->
-          <!-- END WORK -->
+          <!-- end work -->
 
         </div><!-- work-container -->
       </div><!-- work -->

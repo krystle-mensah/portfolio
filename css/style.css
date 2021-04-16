@@ -86,7 +86,7 @@ nav {
 
 .nav-container a {
 	margin: 1em 0em 1em 2em;
-	text-transform: capitalize;
+	text-transform: uppercase;
 	font-size: 16px;
 	font-weight: 400;
 	color: #feffff;
@@ -141,10 +141,13 @@ LAYOUT
 
 /* END */
 
-
 /* CONTACT LAYOUT */
 
 /* #contact {} */
+
+.contact_title {
+	text-transform: uppercase;
+}
 
 .contact-container {
 	max-width: 1170px;
@@ -269,15 +272,26 @@ footer p {
 		grid-gap: 20px;
 		grid-template-columns: repeat(2, 1fr);
 	}
+	.work_item {
+		display: flex;
+		margin-bottom: 100px;
+		margin-top: 100px;
+	}
+
+	hr {
+		height: 1px;
+		background-color: #17252a;
+		border: none;
+	}
+
+	/* End Portfolio */
 }
 
 @media (min-width: 1200px) {
 	h1.the-page-title {
 		font-size: 5rem;
 	}
-
 }
-
 
 /*============
 PORTFOLIO LAYOUT
@@ -297,46 +311,199 @@ PORTFOLIO LAYOUT
 	justify-content: center;
 }
 
-h1.the-portfolio-title {
+.portfolio_title {
 	color: #17252a;
+	text-transform: uppercase;
 }
 
 .work-container {
-	flex-direction: row;
-	display: flex;
-	justify-content: center;
-	margin: auto;
+	flex-direction: column;
+}
+
+.work-container a {
+	text-decoration: none;
+	color: #feffff;
 }
 
 .work {
 	padding: 1em;
-	height: 60vh;
+	/* height: 60vh; */
 }
 
-a.work_item {
-	margin: 1em;
+.work_item p {
+	margin-bottom: 20px;
+}
+
+.work_item h3 {
+	margin-bottom: 20px;
+	font-size: 28px;
+	text-transform: capitalize;
 }
 
 img.the-work-image {
 	display: block;
-	width: 100%;
+	width: 50%;
 	height: auto;
 	box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
 }
 
-/* a.the-work-link {
-	margin-right: 1rem;
-	text-decoration: none;
-	text-transform: capitalize;
-	color: #feffff;
-} */
+.work_description {
+	margin-left: 47px;
+}
 
-/* a.the-work-link:hover,
-a.the-work-link:focus {
-	color: #17252a;
-	transition: color 0.5s ease-out;
-} */
+a.button {
+	background-color: #17252a;
+	/* border: none; */
+	border-radius: 12px;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin-right: 1rem;
+	text-transform: capitalize;
+}
 
 /*
 END PORTFOLIO LAYOUT
 */
+
+@media screen and (max-width: 767px) {
+	h1.the-page-title {
+		font-size: 3rem;
+	}
+
+	.hidden-on-small-screens {
+		display: none;
+	}
+
+	.mobile-container {
+		width: 100%;
+		margin: auto;
+		/* background-color: #555; */
+		color: #17252a;
+		/* border-radius: 10px; */
+	}
+
+	.topnav {
+		overflow: hidden;
+		background-color: #17252a;
+		position: relative;
+		height: 63px;
+	}
+
+	a.hamburger_icon {
+		float: right;
+		display: block;
+		color: #def2f1;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 17px;
+	}
+
+	a.mobile_brand_name {
+		float: left;
+		display: block;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 17px;
+	}
+
+	.side_nav {
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background: #17252a;
+		opacity: 0.9;
+		overflow-x: hidden;
+		padding-top: 60px;
+		transition: 0.5s;
+	}
+
+	.side_nav a {
+		padding: 10px 10px 10px 30px;
+		text-decoration: none;
+		font-size: 22px;
+		color: #def2f1;
+		display: block;
+		transition: 0.3s;
+		text-transform: uppercase;
+		font-family: 'Montserrat', sans-serif;
+	}
+
+	.side_nav a:hover {
+		color: #fff;
+	}
+
+	.side_nav .btn_close {
+		position: absolute;
+		top: 0;
+		right: 22px;
+		font-size: 36px;
+		margin-left: 50px;
+	}
+
+	h1.logo {
+		font-size: 1rem;
+	}
+
+	h1.logo:hover {
+		background-color: #def2f1;
+		color: #17252a;
+	}
+
+	/* SHOWCASE LAYOUT MOBILE */
+
+	.showcase-container {
+		padding: 0 1rem;
+	}
+
+	/* PORFOLIO LAYOUT */
+
+	.work {
+		height: auto;
+	}
+
+	img.the-work-image {
+		margin: auto;
+		/* width: 50%; */
+	}
+
+	.work_description {
+		margin: 0px;
+		text-align: center;
+		padding: 1rem;
+	}
+
+	.work_item h3 {
+		font-size: 18px;
+	}
+
+	/* END PORFOLIO LAYOUT */
+}
+
+@media (max-width: 500px) {
+	h1.the-page-title {
+		font-size: 2.5rem;
+	}
+
+	.showcase-container p {
+		font-size: 1.5rem;
+	}
+}
+
+/* CONTACT LAYOUT MOBILE */
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+	.column,
+	input[type='submit'] {
+		width: 100%;
+		margin-top: 0;
+	}
+}

@@ -23,13 +23,13 @@
 	}
 
 	a.hamburger_icon {
-    float: right;
-    display: block;
-    color: #def2f1;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+		float: right;
+		display: block;
+		color: #def2f1;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 17px;
 	}
 
 	a.mobile_brand_name {
@@ -41,17 +41,17 @@
 	}
 
 	.side_nav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background: #17252a;
-    opacity: 0.9;
-    overflow-x: hidden;
-    padding-top: 60px;
-    transition: 0.5s;
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background: #17252a;
+		opacity: 0.9;
+		overflow-x: hidden;
+		padding-top: 60px;
+		transition: 0.5s;
 	}
 
 	.side_nav a {
@@ -66,12 +66,12 @@
 	}
 
 	.side_nav a:hover {
-		color:#fff;
+		color: #fff;
 	}
 
 	.side_nav .btn_close {
 		position: absolute;
-		top:0;
+		top: 0;
 		right: 22px;
 		font-size: 36px;
 		margin-left: 50px;
@@ -98,17 +98,22 @@
 		height: auto;
 	}
 
-	.work-container {
-		flex-direction: column;
-	}
-
 	img.the-work-image {
 		margin: auto;
-		width: 50%;
+		/* width: 50%; */
+	}
+
+	.work_description {
+		margin: 0px;
+		text-align: center;
+		padding: 1rem;
+	}
+
+	.work_item h3 {
+		font-size: 18px;
 	}
 
 	/* END PORFOLIO LAYOUT */
-
 }
 
 @media (max-width: 500px) {
