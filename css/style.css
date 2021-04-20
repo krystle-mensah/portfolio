@@ -353,9 +353,8 @@ img.the-work-image {
 
 a.button {
 	background-color: #17252a;
-	/* border: none; */
 	border-radius: 12px;
-	color: white;
+	color: #feffff;
 	padding: 15px 32px;
 	text-align: center;
 	text-decoration: none;
@@ -364,6 +363,74 @@ a.button {
 	margin-right: 1rem;
 	text-transform: capitalize;
 }
+
+/* model */
+.referance_button {
+	border: none;
+	background-color: #17252a;
+	border-radius: 12px;
+	color: #feffff;
+	padding: 18px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin-right: 1rem;
+	text-transform: capitalize;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.referance_button:hover {
+	color: #17252a;
+	background: #feffff;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+	margin: 10% auto;
+	width: 60%;
+	padding: 20px;
+	box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+	background-color: #feffff;
+	animation-name: modalopen;
+	animation-duration: 1s;
+}
+
+@keyframes modalopen {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.close {
+	color: #ccc;
+	float: right;
+	font-size: 30px;
+	color: #17252a;
+}
+
+.close:hover,
+.close:focus {
+	/* color: #feffff; */
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* end model */
 
 /*
 END PORTFOLIO LAYOUT

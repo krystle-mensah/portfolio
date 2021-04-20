@@ -85,6 +85,20 @@
               <h3>Washington University tour</h3>
               <p>work project for imedia8</p>
               <a class="button" href="https://law-wustl.university-tour.com/" target="_blank">view site</a>
+
+              <button id="modal_btn" class="button referance_button">reference</button>
+
+              <div id="my-modal" class="modal">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>L3 SDT - Employer Reference</h2>
+                  </div>
+                  <div class="modal-body">
+                    <embed src="documents/reference.pdf" type="application/pdf" width="100%" height="600px" />
+                  </div>
+                </div>
+              </div>
             </div><!-- work_description -->
           </div><!-- work_item_container -->
           <!-- end work -->
